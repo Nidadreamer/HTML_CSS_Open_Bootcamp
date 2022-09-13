@@ -3,5 +3,8 @@
 }
 #elemento-1 {
     color: red;
+}
+
+.des #elemento-1 {
     font-size: 2rem;
 }
