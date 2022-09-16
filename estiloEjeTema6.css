@@ -1,0 +1,26 @@
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+button {
+    padding: 20px; 
+    border: none; 
+    border-radius: 20px;
+    font-family: 'Lucida Sans';
+    font-size: larger;
+    color: rgb(119, 27, 73);
+    background-color: rgb(234, 245, 83);
+}
+.inicio::before { 
+    content: 'Pasa por encima';
+}
+button :hover { 
+    color: white;
+    background-color: green;
+}
+.inicio:hover::before {
+    content: '¡Hecho!';
+}
+
