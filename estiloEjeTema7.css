@@ -1,0 +1,213 @@
+* {
+    background-color: #161717;
+}
+.contenedor {
+    margin:auto; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    color: white;
+    width: 450px;
+}
+
+.botones {
+    align-self: center;
+    display: flex;
+    gap: 20px;
+}
+
+.google-btn {
+    background-color: rgb(26,115,232);
+    border: none;
+    border-radius: 5px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    padding: 4px;
+    cursor: pointer;
+}
+
+.google-btn:hover {
+    opacity: 0.8;
+}
+
+.google-btn span {
+    background-color: rgb(26,115,232);
+    height: 5px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.google-btn picture {
+    width: 30px;
+    height: 30px;
+    background-color: rgb(26,115,232);
+    border-radius: 2px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.google-btn picture img{
+    width: 75%;
+}
+
+.twitter-btn {
+    background-color: #161717;
+    border: none;
+    border-radius: 5px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    padding: 4px;
+    cursor: pointer;
+}
+
+.twitter-btn:hover {
+    opacity: 0.6;
+}
+
+.twitter-btn picture {
+    width: 50px;
+    height: 50px;
+    background-color: #161717;
+    border-radius: 2px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.twitter-btn picture img{
+    width: 75%;
+}
+
+.google-btn span {
+    color: white;
+    padding: 15px;
+    font-weight: 500;
+}
+
+.separador {
+    display: flex; /*para que todo esté en una misma línea */
+    width: 100%;
+    gap: 15px
+}
+
+.separador hr {
+    flex-grow: 1;
+    border: none;
+    border-top: 2px solid rgb(211, 208, 208);
+}
+
+.separador span {
+    color: rgb(185, 179, 179);
+}
+
+.seccion-input {
+    display: flex;
+    gap: 20px;
+    width: 100%;
+}
+
+.seccion-input2 {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 20px;
+}
+
+label {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+label span {
+    font-weight: 700;
+}
+label input {
+    width: 90%;
+    background-color: #212121;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+    outline: none;
+    font-size: 14pt;
+    transition: background-color 0.6s, border 0.6s, box-shadow 0.6s;
+}
+.seccion-input label input {
+    width: 80%;
+    background-color: #212121;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+    outline: none;
+    font-size: 14pt;
+}
+
+label input:hover {
+    background-color: #454045;
+    border: 1px solid #212121;
+    box-shadow: inset 0px 0px 2px rgb(194, 27, 124);
+}
+
+label input:focus {
+background-color: white;
+border: 1px solid #212121;
+box-shadow: inset 0px 0px 2px rgb(194, 27, 124);
+}
+
+label[for="email"] {
+    width: 100%;
+}
+
+.checkbox-etiqueta {
+    display: flex;
+    flex-direction: row;
+}
+
+.checkbox-etiqueta input[type="checkbox"] {
+    width:60px;
+}
+
+.checkbox-etiqueta input[type="checkbox"]:hover {
+    background-color: #454045;
+    border: 1px solid #212121;
+    box-shadow: none;
+}
+
+.checkbox-etiqueta input[type="checkbox"]:focus {
+    background-color: #454045;
+    border: 1px solid #212121;
+    box-shadow: none;
+}
+
+.checkbox-etiqueta span {
+    font-weight: 14pt;
+}
+
+.crear-btn {
+    background-color: rgb(194, 27, 124);
+    color: white;
+    font-weight: 500;
+    font-size: 14pt;
+    text-align: center;
+    padding: 15px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.crear-btn:hover {
+    opacity: 0.8;
+}
