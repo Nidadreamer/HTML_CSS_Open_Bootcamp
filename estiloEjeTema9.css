@@ -16,6 +16,7 @@ body {
     border-bottom: 3px solid darkgreen;
     border-right: 3px solid darkgreen;
     cursor: pointer;
+    box-shadow: 0px 0px 0px gray;
     transition: 0.4s;
 }
 
