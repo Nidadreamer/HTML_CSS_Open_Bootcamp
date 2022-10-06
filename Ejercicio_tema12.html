@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elementos de Interés en Bootstrap</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <style>
+        body {
+            background-color: rgb(49, 49, 49);
+        }
+        .sombra {
+            box-shadow: 0px 0px 6px rgb(255,193,7);
+        }
+    </style>
+</head>
+<body>
+<div class="row">
+    <div class="container pt-5" style="width: 20rem;">
+        <div class="bg-white p-5 rounded-3 sombra">
+            <div class="container-fluid ">
+                <h4 class="fw-bold">Bienvenido al Jumbotron</h4>
+                <p class="col-md-8 fs-7">Aquí te puedo contar mi vida, una noticia o algo que quiera que le prestes atención.</p>
+                <button type="button" class="btn btn-outline-warning" data-bs-toggle="modal" data-bs-target="#noa-model-01">Súper Botón</button>
+            </div>
+        </div>
+        <div class="modal fade" id="noa-model-01" tabindex="-1" aria-labelledby="noa-model-01Label" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="noa-model-01lLabel">Pop up del Jumbotron</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        Aquí te puedo detallar más la noticia.
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-outline-warning" data-bs-dismiss="modal">Cerrar</button>                        
+                    </div>
+                </div>
+            </div>
+        </div> 
+    </div>
+    
+    <div class="container pt-5" style="text-align: left; width: 20rem; color: white;">
+        <h3 style="color: white;">Formulario de contacto</h3>
+        <div class="form-floating mb-3" style="color: black;">
+            <input type="text" class="form-control sombra" id="FormInput1" placeholder="Tu nombre">
+            <label for="FormInput1" class="form-label">Nombre</label>            
+            <div id="ayudaNombre" class="form-text">Si lo deseas puedes usar un apodo</div>
+        </div>
+        <div class="form-floating mb-3" style="color: black;">
+            <input type="text" class="form-control sombra" id="FormInput2" placeholder="Tu número de teléfono">
+            <label for="FormInput2" class="form-label">Teléfono</label>                    
+        </div>
+        <div class="mb-3 form-floating" style="color: black;">
+            <textarea class="form-control sombra" placeholder="Dejanos un mensaje" id="floatingTextarea" rows="3"></textarea>
+            <label for="floatingTextarea" class="form-label">Dejanos un mensaje</label>        
+        </div>
+        <button class="btn btn-outline-warning" data-bs-toggle="modal" data-bs-target="#noa-model-02">Enviar</button>
+        <div class="modal fade" id="noa-model-02" tabindex="-1" aria-labelledby="noa-model-02Label" aria-hidden="true" style="color: black;">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        Tu formulario ha sido enviado con exito. <i class="bi bi-hand-thumbs-up text-warning fs-2"></i>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-outline-warning" data-bs-dismiss="modal">Cerrar</button>                        
+                    </div>
+                </div>
+            </div>
+        </div> 
+    </div>
+
+    <div class="container pt-2" style="width: 20rem;">
+        <img class="py-2" src="chibi02.png" style="width: 100px; height: 100px; border-radius: 0 50px 50px 50px;">
+        <div class="card sombra">
+            <div class="card-header fw-bold">
+                Noa Perona Martínez ~ Aprendiz de developer
+            </div>
+            <div class="card-body">
+                <p class="card-text fw-light">Actualmente estoy avanzando en los cursos de Java, HTML / CSS y SQL.</p>
+                <p class="card-text fw-light">Mi meta es poder conseguir desarrollar un programa para ordenador que permita el seguimiento de pacientes.</p>
+                <p class="card-text fw-light">Puedes ponerte en contacto conmigo a traves de los siguientes métodos:</p>
+                <div class="d-flex justify-content-evenly">
+                <span class="fw-light" data-bs-toggle="tooltip" data-bs-title="Enviame un email" style="font-size: 0.8rem;"><i class="bi bi-at text-warning fs-5"></i>nidadreamer@gmail.com</span>
+                <span><a href="https://www.linkedin.com/in/noa-perona-mart%C3%ADnez-b701b3239/" data-bs-toggle="tooltip" data-bs-title="Linkedin" target="_blank"><i class="bi bi-linkedin text-warning fs-5"></i></a></span> 
+                <span><a href="https://github.com/Nidadreamer" data-bs-toggle="tooltip" data-bs-title="Github" target="_blank"><i class="bi bi-github text-warning fs-5"></i></a></span>
+                </div>
+            </div>
+        
+        </div>
+    </div>
+
+</div>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+    <script>
+        /* Tooltip */
+        const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+        const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
+    </script>
+</body>
+</html>
